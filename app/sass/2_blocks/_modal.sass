@@ -1,0 +1,158 @@
+.modal
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 997
+	background-color: rgba(51, 51, 51, .8)
+	display: none
+	
+.modal_container
+	margin: 0 auto
+	max-width: 800px
+	width: 100%
+	max-height: 94%
+	background: #fff
+	background: linear-gradient(to right, #FFFFFF 60%, rgba(255, 255, 255, .5) 100%), #fff url(../media/img/offers-bg-2.jpg) no-repeat 100% 50%
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	z-index: 999
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25)
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translateY(-50%) translateX(-50%)
+
+	&.__only-img
+		width: auto
+
+		.modal_content
+			padding: 0
+		
+.modal_content
+	overflow-y: auto
+	padding: 30px
+	flex: 1 1 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+
+.modal_close
+	display: block
+	width: 24px
+	height: 24px
+	position: absolute
+	top: 30px
+	right: 30px
+	overflow: hidden
+	
+	&::before,
+	&::after
+		content: ""
+		display: block
+		width: 34px
+		height: 1px
+		background-color: #6F6F6F
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -17px
+		
+	&::before
+		transform: rotate(45deg)
+	
+	&::after
+		transform: rotate(-45deg)
+
+	&:hover
+		opacity: .8
+
+.modal_header
+	margin-bottom: 30px
+	padding-bottom: 30px
+	position: relative
+	color: #333
+
+	&::before
+		content: ""
+		display: block
+		width: 140px
+		height: 1px
+		background-color: #2F8048
+		position: absolute
+		bottom: 0
+		left: 0
+
+.modal_title
+	font-family: "Cormorant Unicase", serif
+	font-size: 3.125rem
+	line-height: 1
+	margin: 0	
+
+.modal_subtitle
+	display: block
+	font-size: 1.25rem
+	line-height: 1
+	margin-top: 12px
+	font-family: "Cormorant Unicase", serif
+
+.modal_content-width
+	width: 100%
+	max-width: 480px
+
+.modal_text
+	color: #6F6F6F
+	margin: 0 0 20px
+
+	&:last-child
+		margin-bottom: 0
+
+.modal_actions
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	padding-top: 40px
+
+@media screen and (max-width: 1024px)
+	.modal
+		padding-top: 0
+
+	.modal_content
+		padding: 20px 10px 30px
+
+	.modal_header
+		padding-bottom: 20px
+		margin-bottom: 15px
+
+	.modal_title
+		font-size: 1.812rem
+
+	.modal_close
+		width: 20px
+		height: 20px
+		top: 20px
+		right: 10px
+	
+	.modal_actions
+		justify-content: center
+
+		.btn
+			width: 100%
+			max-width: 400px
+
+	.modal_content-width
+		margin-right: auto
+		margin-left: auto

@@ -1,0 +1,63 @@
+.delivery-terms
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	width: 100%
+
+.delivery-terms_item
+	width: calc(100% / 4 - 156px / 4)
+	margin-right: 52px
+
+	&:last-child
+		margin-right: 0
+
+.delivery-terms_num
+	font-size: 4.5rem
+	line-height: 1
+	display: block
+	position: relative
+	margin-bottom: 20px
+	font-family: "Cormorant Unicase", serif
+
+	&::before
+		content: ""
+		display: block
+		height: 2px
+		width: 155px
+		background-color: #fff
+		opacity: .2
+		position: absolute
+		top: 50%
+		right: 0
+		margin-top: -1px
+
+.delivery-terms_text
+	margin: 0
+
+@media screen and (max-width: 1024px)
+	.delivery-terms
+		flex-direction: column
+
+	.delivery-terms_item
+		width: 100%
+		margin-right: 0
+		margin-bottom: 40px
+
+		&:last-child
+			margin-bottom: 0
+
+	.delivery-terms_num
+		font-size: 3rem
+		margin-bottom: 0
+
+		&::before
+			width: initial
+			right: 0
+			left: 65px
+
+	.delivery-terms_text
+		padding-left: 65px
+		font-size: .875rem

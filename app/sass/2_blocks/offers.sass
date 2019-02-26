@@ -1,0 +1,140 @@
+.offers
+	text-align: center
+	color: #6f6f6f
+	position: relative
+
+	&::before,
+	&::after
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 300px
+
+	&::before
+		left: 0
+		background: linear-gradient(to left, #fff 10%, rgba(255,255,255, .1) 100%), url(../media/img/offers-bg-1.jpg) no-repeat 0 50%
+
+	&::after
+		right: 0
+		background: linear-gradient(to right, #fff 10%, rgba(255,255,255, .1) 100%), url(../media/img/offers-bg-2.jpg) no-repeat 100% 50%
+
+.offers_wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding-top: 80px
+	padding-bottom: 80px
+	position: relative
+	z-index: 1
+
+.offers_title
+	font-size: 3.125rem
+	line-height: 1
+	color: #333
+	display: block
+	margin-bottom: 20px
+	font-family: "Cormorant Unicase", serif
+
+.offers_subtitle
+	font-size: 1.25rem
+	line-height: 1
+	color: #6f6f6f
+	display: block
+	padding-bottom: 30px
+	margin-bottom: 30px
+	position: relative
+	font-family: "Cormorant Unicase", serif
+
+	&::before
+		content: ""
+		display: block
+		width: 140px
+		height: 1px
+		background-color: #2F8048
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -70px
+
+.offers_text
+	margin: 0 0 60px
+
+.offers_items
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	width: 100%
+	margin-bottom: 45px
+	color: #828282
+
+.offer-item
+	width: 25%
+	border-right: 1px solid #f2f2f2
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	font-size: 1.25rem
+	line-height: 1
+	letter-spacing: 0.15em
+
+	&:last-child
+		border-right: 0
+
+	span:last-child
+		font-size: .625rem
+		text-transform: uppercase
+		padding-top: 5px
+		font-weight: 700
+		letter-spacing: 0.06em
+		opacity: .8
+
+@media screen and (max-width: 1024px)
+	.offers
+		overflow: hidden
+
+		&::before
+			margin-left: -180px
+		&::after
+			margin-right: -180px
+
+	.offers_wrapper
+		padding-top: 50px
+		padding-bottom: 60px
+
+	.offers_title
+		font-size: 1.812rem
+		margin-bottom: 8px
+
+	.offers_subtitle
+		font-size: 1.125rem
+		padding-bottom: 15px
+		margin-bottom: 15px
+
+	.offers_text
+		font-size: .875rem
+		margin-bottom: 45px
+
+	.offers_items
+		flex-wrap: wrap
+
+	.offer-item
+		width: 50%
+
+		&:nth-child(n+3)
+			margin-top: 30px
+
+		&:nth-child(2n+2)
+			border-right: none
+	

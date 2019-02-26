@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="l-wrapper site-header_wrapper"><a class="site-header_logo" href="#"><img src="media/img/site-logo.png" alt="site-logo"/></a>
+        <div class="site-header_nav">
+          <nav class="site-nav">
+            <ul class="site-nav_list">
+              <li class="site-nav_item"><a class="site-nav_link" href="#use">Применение</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="#fabrication">Производство</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="#delivery">Условия поставки</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header_info">
+          <div class="site-header_info-item">
+              <svg class="icon icon-mail ">
+                <use xlink:href="media/img/sprite.svg#mail"></use>
+              </svg><a class="site-header_info-link" href="mailto:info@ecotonica.ru">info@ecotonica.ru</a>
+          </div>
+          <div class="site-header_info-item">
+              <svg class="icon icon-phone ">
+                <use xlink:href="media/img/sprite.svg#phone"></use>
+              </svg><a class="site-header_info-link" href="tel:+7 (342) 243-12-14">+7 (342) 243-12-14</a>
+          </div>
+        </div>
+        <div class="site-header_menu"><a class="site-header_menu-open js-m-menu-open" href="#">
+              <svg class="icon icon-bars ">
+                <use xlink:href="media/img/sprite.svg#bars"></use>
+              </svg></a></div>
+      </div>
+    </header>
+    <main>
+      <section class="start-banner">
+        <div class="l-wrapper start-banner_wrapper">
+          <h1 class="start-banner_title">
+            Оптовые поставки <br>
+            и производство хлореллы
+          </h1>
+          <p class="start-banner_text">Бесплатная доставка с производства в Перми по всей России и СНГ</p><a class="btn mopen" href="#get-price">Получить прайс</a>
+        </div>
+      </section>
+      <div class="green-block" id="use">
+        <div class="l-wrapper green-block_wrapper"><b class="green-block_title">Кому мы интересны?</b>
+          <div class="whos-interested"><a class="whos-interested_card mopen" href="#interested-modal-1">
+              <div class="whos-interested_card-icon">
+                <svg width="100" height="84" viewBox="0 0 100 84" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                  <path d="M98.3333 0H1.66667C0.74625 0 0 0.750284 0 1.67568V65.3513C0 66.2767 0.74625 67.027 1.66667 67.027H48.3333V80.4324H30C29.0796 80.4324 28.3333 81.1827 28.3333 82.1081C28.3333 83.0335 29.0796 83.7838 30 83.7838H70C70.9204 83.7838 71.6667 83.0335 71.6667 82.1081C71.6667 81.1827 70.9204 80.4324 70 80.4324H51.6667V67.027H98.3333C99.2538 67.027 100 66.2767 100 65.3513V1.67568C100 0.750284 99.2538 0 98.3333 0ZM96.6667 63.6757H3.33333V3.35135H96.6667V63.6757Z"></path>
+                  <path d="M72.0696 16.8066C71.9377 16.7735 71.8025 16.7568 71.6667 16.7568H29.2317L28.7917 14.2131C28.3723 11.8076 26.294 10.0532 23.865 10.0541H20C19.0796 10.0541 18.3333 10.8043 18.3333 11.7297C18.3333 12.6551 19.0796 13.4054 20 13.4054H23.865C24.675 13.4046 25.3681 13.9892 25.5083 14.7912L31.21 47.7836C31.566 49.8482 33.1613 51.4728 35.21 51.8571C36.0673 55.441 39.6521 57.6474 43.2167 56.7855C45.61 56.2068 47.4883 54.344 48.0967 51.9459H55.2367C56.1571 55.5302 59.7933 57.6856 63.3583 56.7602C66.9233 55.8348 69.0671 52.1789 68.1467 48.5946C67.2262 45.0103 63.59 42.855 60.025 43.7804C57.6767 44.3899 55.8429 46.2336 55.2367 48.5946H48.0967C47.1973 45.0269 43.5917 42.8676 40.0431 43.7718C37.7731 44.3501 35.9752 46.0899 35.3133 48.3483C34.8842 48.1103 34.5833 47.6916 34.4933 47.2071L33.285 40.2162H61.4617C65.2873 40.22 68.6229 37.6013 69.5467 33.8688L73.2833 18.8379C73.5061 17.94 72.9627 17.0305 72.0696 16.8066ZM61.6667 46.9189C63.5077 46.9189 65 48.4193 65 50.2703C65 52.1213 63.5077 53.6216 61.6667 53.6216C59.8256 53.6216 58.3333 52.1213 58.3333 50.2703C58.3333 48.4193 59.8256 46.9189 61.6667 46.9189ZM41.6667 46.9189C43.5077 46.9189 45 48.4193 45 50.2703C45 52.1213 43.5077 53.6216 41.6667 53.6216C39.8256 53.6216 38.3333 52.1213 38.3333 50.2703C38.3333 48.4193 39.8256 46.9189 41.6667 46.9189ZM66.3133 33.0577C65.7565 35.2956 63.7563 36.8653 61.4617 36.8649H32.7067L29.815 20.1081H69.5333L66.3133 33.0577Z"></path>
+                </svg>
+              </div><b class="whos-interested_card-title">Интернет-магазины</b>
+              <p class="whos-interested_card-text">Повышает эффективность кормления и еще много чего</p><span class="whos-interested_card-link">Узнать больше</span></a><a class="whos-interested_card mopen" href="#interested-modal-2">
+              <div class="whos-interested_card-icon">
+                <svg width="100" height="84" viewBox="0 0 83 83" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                  <path d="M79.1216 8.27628C81.4032 8.13174 83.136 6.1649 82.9914 3.88322C82.853 1.69697 81.0355 -0.00291921 78.8449 0.00503391H4.15472C1.86837 -0.00343789 0.00820463 1.84342 -9.42777e-05 4.12959C-0.0080474 6.32016 1.69185 8.13779 3.87809 8.27611L0.600021 25.7552C0.204612 26.809 0.00301781 27.9257 0.00526544 29.0512C0.00751306 32.2154 1.55716 35.1782 4.15472 36.985V81.611C4.15472 82.3748 4.77403 82.9941 5.53787 82.9941H77.4618C78.2256 82.9941 78.8449 82.3748 78.8449 81.611V36.985C81.4425 35.1782 82.9921 32.2154 82.9944 29.0512C82.9966 27.9257 82.795 26.809 82.3996 25.7552L79.1216 8.27628ZM2.77157 4.15449C2.77157 3.39064 3.39088 2.77134 4.15472 2.77134H78.8449C79.6088 2.77134 80.2281 3.39064 80.2281 4.15449C80.2281 4.91833 79.6088 5.53764 78.8449 5.53764H4.15472C3.39088 5.53764 2.77157 4.91833 2.77157 4.15449ZM31.8178 80.2278H15.2199V47.0322H31.8178V80.2278ZM76.0786 80.2278H34.5841V45.649C34.5841 44.8852 33.9648 44.2659 33.2009 44.2659H13.8368C13.0729 44.2659 12.4536 44.8852 12.4536 45.649V80.2278H6.92102V38.3253C11.1561 39.5976 15.7142 37.8313 17.9862 34.0375C20.7368 38.623 26.684 40.1106 31.2695 37.36C32.2766 36.7559 33.1655 35.9736 33.8925 35.0513C37.2126 39.2528 43.31 39.9672 47.5113 36.6471C48.1035 36.1791 48.6391 35.6437 49.1072 35.0513C52.4193 39.2492 58.5076 39.9672 62.7054 36.6551C63.6277 35.9276 64.4097 35.0382 65.0134 34.0306C67.2854 37.8244 71.8436 39.5907 76.0786 38.3183V80.2278ZM73.3123 35.967C69.4948 35.9625 66.401 32.8687 66.3966 29.0512C66.3966 28.2874 65.7773 27.6681 65.0134 27.6681C64.2496 27.6681 63.6303 28.2874 63.6303 29.0512C63.6309 32.8706 60.5353 35.9675 56.7159 35.9684C53.965 35.9689 51.4753 34.339 50.3755 31.8175C50.0709 31.117 49.2558 30.7962 48.5555 31.1009C48.2346 31.2404 47.9785 31.4966 47.8388 31.8175C46.3118 35.3185 42.2358 36.9186 38.7349 35.3916C37.1353 34.6938 35.8586 33.4171 35.1608 31.8175C34.8562 31.117 34.0412 30.7962 33.3408 31.1009C33.0199 31.2404 32.7638 31.4966 32.6241 31.8175C31.0971 35.3185 27.0212 36.9186 23.5202 35.3916C20.9987 34.2918 19.3689 31.8021 19.3694 29.0512C19.3694 28.2874 18.7501 27.6681 17.9862 27.6681C17.2224 27.6681 16.6031 28.2874 16.6031 29.0512C16.6371 32.8706 13.5683 35.9945 9.74888 36.0285C5.92948 36.0626 2.80563 32.9937 2.77157 29.1743L3.31238 26.3278C3.31169 26.3159 3.31169 26.3038 3.31238 26.2918L6.68589 8.30395H61.0936L63.6538 22.383C63.7734 23.0402 64.3455 23.5181 65.0134 23.5186C65.0969 23.519 65.1804 23.511 65.2624 23.4951C66.0107 23.3551 66.5051 22.6369 66.3689 21.8879L63.9069 8.30395H76.3138L79.6845 26.2849C79.6852 26.2969 79.6852 26.309 79.6845 26.3209L80.2281 29.1674C80.1646 32.9413 77.0869 35.9675 73.3123 35.967Z"></path>
+                  <path d="M19.5409 11.0818C18.7831 10.9872 18.0922 11.5247 17.9973 12.2823L16.6141 23.3476C16.5195 24.1054 17.0571 24.7962 17.8147 24.8912C17.8716 24.8983 17.9288 24.9019 17.9862 24.9022C18.6831 24.9014 19.2705 24.3822 19.3569 23.6906L20.7401 12.6254C20.8346 11.8681 20.298 11.1774 19.5409 11.0818Z"></path>
+                  <path d="M49.7918 26.1471L48.4087 12.3155C48.3323 11.5555 47.6542 11.0012 46.8941 11.0776C46.1341 11.154 45.5798 11.8321 45.6562 12.5922L47.0394 26.4237C47.1104 27.1305 47.7052 27.6685 48.4156 27.6685H48.5539C49.314 27.5925 49.8686 26.9147 49.7927 26.1547C49.7924 26.1521 49.7922 26.1495 49.7918 26.1471Z"></path>
+                  <path d="M36.1118 11.0781C36.1097 11.078 36.1076 11.0778 36.1055 11.0774C35.3458 10.9972 34.665 11.5481 34.5849 12.3078C34.5846 12.3104 34.5844 12.3128 34.5841 12.3154L33.2009 26.1469C33.121 26.9066 33.6722 27.5871 34.4319 27.667C34.4364 27.6675 34.4411 27.6678 34.4458 27.6684H34.5841C35.2971 27.672 35.896 27.1329 35.9672 26.4235L37.3504 12.592C37.4264 11.832 36.8718 11.1542 36.1118 11.0781Z"></path>
+                  <path d="M66.3965 47.0327H44.2661C43.5022 47.0327 42.8829 47.652 42.8829 48.4158V62.2473C42.8829 63.0112 43.5022 63.6305 44.2661 63.6305H66.3965C67.1604 63.6305 67.7797 63.0112 67.7797 62.2473V48.4158C67.7797 47.6518 67.1604 47.0327 66.3965 47.0327ZM65.0134 60.8642H45.6492V49.799H65.0134V60.8642Z"></path>
+                </svg>
+              </div><b class="whos-interested_card-title">Сетевые магазины</b>
+              <p class="whos-interested_card-text">Повышает эффективность кормления и еще много чего</p><span class="whos-interested_card-link">Узнать больше</span></a><a class="whos-interested_card mopen" href="#interested-modal-3">
+              <div class="whos-interested_card-icon">
+                <svg width="100" height="84" viewBox="0 0 100 81" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                  <path d="M99.8867 45.8851C99.8677 45.8385 99.846 45.793 99.8217 45.7491C99.7981 45.6887 99.771 45.63 99.74 45.5731L86.89 25.657C86.5823 25.1807 86.0521 24.8935 85.4833 24.8952H76.6667V1.65968C76.6667 0.743121 75.9204 0 75 0H1.66667C0.74625 0 0 0.743121 0 1.65968V64.7275C0 65.644 0.74625 66.3872 1.66667 66.3872H10.5C8.63396 72.5284 12.1206 79.0134 18.2877 80.8716C24.4548 82.7298 30.9671 79.2578 32.8333 73.1165C33.5 70.9224 33.5 68.5813 32.8333 66.3872H70.5C68.6592 72.5284 72.1663 78.9928 78.3333 80.826C84.5004 82.6591 90.9921 79.1667 92.8329 73.0255C92.9958 72.4821 93.1185 71.9276 93.2 71.3662H98.3333C99.2538 71.3662 100 70.6231 100 69.7065V46.4478C99.9956 46.2553 99.9571 46.0648 99.8867 45.8851ZM76.6667 28.2145H84.5733L95.2817 44.8113H76.6667V28.2145ZM3.33333 3.31936H73.3333V53.1097H3.33333V3.31936ZM21.6667 78.0049C17.0667 77.9995 13.3388 74.2872 13.3333 69.7065C13.3296 68.2423 13.7217 66.8039 14.4683 65.5424C14.9046 64.7879 15.4619 64.1095 16.1183 63.5342C17.6381 62.1635 19.6163 61.4056 21.6667 61.4081C24.6463 61.4119 27.3973 62.9995 28.8817 65.5723C29.624 66.8239 30.0106 68.2528 30 69.7065C29.9946 74.2874 26.2667 77.9995 21.6667 78.0049ZM72.3417 62.7724C72.265 62.8736 72.1667 62.9649 72.0933 63.0678H31.2317C31.1733 62.9848 31.1033 62.9118 31.0433 62.8305C30.9183 62.6645 30.7867 62.4985 30.6533 62.3326C30.4733 62.1151 30.2883 61.9044 30.095 61.7002C29.95 61.5492 29.8 61.4031 29.6483 61.2604C29.4433 61.0679 29.2333 60.887 29.0167 60.7111C28.85 60.5799 28.6833 60.4505 28.5167 60.3293C28.29 60.1634 28.0567 60.0123 27.8183 59.8646C27.6433 59.7551 27.47 59.6455 27.29 59.546C27.04 59.4099 26.79 59.2887 26.525 59.1709C26.3417 59.0862 26.1617 59.0049 25.975 58.9236C25.7 58.814 25.4167 58.7244 25.1417 58.6365C24.96 58.5784 24.7817 58.5136 24.595 58.4705C24.2783 58.3875 23.9533 58.3311 23.6283 58.2763C23.47 58.2481 23.3133 58.2083 23.1533 58.1883C19.7908 57.7446 16.4025 58.7972 13.89 61.0662C13.4785 61.4397 13.0933 61.8405 12.7367 62.2662C12.63 62.3923 12.5317 62.5218 12.4317 62.6512C12.3317 62.7807 12.2017 62.9234 12.0983 63.0678H3.33333V56.4291H73.3333V61.594C73.21 61.7168 73.12 61.8579 73 61.9857C72.7667 62.2429 72.545 62.5019 72.3417 62.7724ZM81.6667 78.0049C77.0667 77.9995 73.3388 74.2872 73.3333 69.7065C73.3296 68.2423 73.7217 66.8039 74.4683 65.5424C74.9046 64.7879 75.4619 64.1095 76.1183 63.5342C77.6381 62.1635 79.6163 61.4056 81.6667 61.4081C84.6463 61.4119 87.3973 62.9995 88.8817 65.5723C89.624 66.8239 90.0106 68.2528 90 69.7065C89.9946 74.2874 86.2667 77.9995 81.6667 78.0049ZM96.6667 68.0468H93.215C93.1515 67.6213 93.0642 67.1996 92.9533 66.7838C92.925 66.6776 92.89 66.5764 92.86 66.4718L92.8333 66.3872H96.6667V68.0468ZM96.6667 63.0678H91.2033C91.1 62.9201 91.01 62.7608 90.9 62.618C90.6817 62.3359 90.4367 62.0786 90.195 61.8197C90.0917 61.7085 90 61.5857 89.8933 61.4878C89.6042 61.2075 89.3004 60.9428 88.9833 60.6945C88.9033 60.6297 88.8333 60.555 88.7517 60.4936C88.4006 60.2306 88.035 59.9874 87.6567 59.765C87.6 59.7318 87.5517 59.6903 87.49 59.6588C87.1073 59.4414 86.7123 59.2462 86.3067 59.0746C86.2483 59.0497 86.195 59.0149 86.14 58.99C85.7265 58.8219 85.3035 58.6777 84.8733 58.5585C84.8167 58.5419 84.7633 58.517 84.7067 58.5004C84.255 58.3784 83.7965 58.2829 83.3333 58.2149C83.2933 58.2149 83.255 58.1966 83.215 58.1917C82.7019 58.1228 82.1846 58.0884 81.6667 58.0888C81.2648 58.0908 80.8631 58.113 80.4633 58.1552C80.34 58.1684 80.2167 58.19 80.0933 58.2066C79.8183 58.2448 79.545 58.2879 79.2733 58.3444C79.1367 58.3742 79 58.4058 78.865 58.4406C78.6033 58.5037 78.3467 58.5784 78.09 58.6597C77.9633 58.7012 77.8367 58.741 77.7117 58.7858C77.4283 58.8887 77.1517 59.0032 76.8783 59.1277C76.81 59.1593 76.7367 59.1808 76.6683 59.214V48.1307H96.6667V63.0678Z"></path>
+                  <path d="M21.6667 64.7275C18.9052 64.7275 16.6667 66.9566 16.6667 69.7065C16.6667 72.4564 18.9052 74.6855 21.6667 74.6855C24.4281 74.6855 26.6667 72.4564 26.6667 69.7065C26.6667 66.9566 24.4281 64.7275 21.6667 64.7275ZM21.6667 71.3662C20.7463 71.3662 20 70.6231 20 69.7065C20 68.79 20.7463 68.0468 21.6667 68.0468C22.5871 68.0468 23.3333 68.79 23.3333 69.7065C23.3333 70.6231 22.5871 71.3662 21.6667 71.3662Z"></path>
+                  <path d="M81.6667 64.7275C78.9052 64.7275 76.6667 66.9566 76.6667 69.7065C76.6667 72.4564 78.9052 74.6855 81.6667 74.6855C84.4281 74.6855 86.6667 72.4564 86.6667 69.7065C86.6667 66.9566 84.4281 64.7275 81.6667 64.7275ZM81.6667 71.3662C80.7462 71.3662 80 70.6231 80 69.7065C80 68.79 80.7462 68.0468 81.6667 68.0468C82.5871 68.0468 83.3333 68.79 83.3333 69.7065C83.3333 70.6231 82.5871 71.3662 81.6667 71.3662Z"></path>
+                </svg>
+              </div><b class="whos-interested_card-title">Дистрибьюторы</b>
+              <p class="whos-interested_card-text">Повышает эффективность кормления и еще много чего</p><span class="whos-interested_card-link">Узнать больше</span></a><a class="whos-interested_card mopen" href="#interested-modal-4">
+              <div class="whos-interested_card-icon">
+                <svg width="100" height="84" viewBox="0 0 75 84" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                  <path d="M39.2 9.79983C39.2 5.9339 36.066 2.79982 32.2 2.79982C28.336 2.80437 25.2046 5.93583 25.2 9.79983C25.2 13.6658 28.3341 16.7998 32.2 16.7998C36.066 16.7998 39.2 13.6658 39.2 9.79983ZM32.2 13.9998C29.8804 13.9998 28 12.1195 28 9.79983C28 7.4802 29.8804 5.59982 32.2 5.59982C34.5196 5.59982 36.4 7.4802 36.4 9.79983C36.4 12.1195 34.5196 13.9998 32.2 13.9998Z"></path>
+                  <path d="M58.8003 9.79983C58.8003 5.9339 55.6662 2.79982 51.8003 2.79982C47.9363 2.80437 44.8049 5.93583 44.8003 9.79983C44.8003 13.6658 47.9344 16.7998 51.8003 16.7998C55.6662 16.7998 58.8003 13.6658 58.8003 9.79983ZM51.8003 13.9998C49.4807 13.9998 47.6003 12.1195 47.6003 9.79983C47.6003 7.4802 49.4807 5.59982 51.8003 5.59982C54.1199 5.59982 56.0003 7.4802 56.0003 9.79983C56.0003 12.1195 54.1199 13.9998 51.8003 13.9998Z"></path>
+                  <path d="M32.2 12.5999C33.7464 12.5999 35.0001 11.3463 35.0001 9.79986C35.0001 8.25346 33.7464 6.99986 32.2 6.99986C30.6536 6.99986 29.4 8.25346 29.4 9.79986C29.4 11.3463 30.6536 12.5999 32.2 12.5999Z"></path>
+                  <path d="M51.8003 12.5999C53.3468 12.5999 54.6004 11.3463 54.6004 9.79986C54.6004 8.25346 53.3468 6.99986 51.8003 6.99986C50.2539 6.99986 49.0003 8.25346 49.0003 9.79986C49.0003 11.3463 50.2539 12.5999 51.8003 12.5999Z"></path>
+                  <path d="M61.6 60.1998H64.4V57.3998H61.6V54.5998C61.6 53.8267 60.9732 53.1998 60.2 53.1998H43.4C42.6269 53.1998 42 53.8267 42 54.5998V60.1998C42 65.6122 46.3876 69.9998 51.8 69.9998C57.2124 69.9998 61.6 65.6122 61.6 60.1998ZM51.8 67.1998C47.936 67.1953 44.8046 64.0638 44.8 60.1998V55.9998H58.8V60.1998C58.7955 64.0638 55.664 67.1953 51.8 67.1998Z"></path>
+                  <path d="M71.4 22.4H60.2C59.4268 22.4 58.8 23.0268 58.8 23.8H56V19.6H67.2C67.9731 19.6 68.6 18.9731 68.6 18.2V12.6C68.5916 5.6448 62.9552 0.0084 56 0H1.4C0.62685 0 0 0.62685 0 1.4V82.6C0 83.3731 0.62685 84 1.4 84H60.2C64.064 83.9955 67.1954 80.864 67.2 77V71.4C67.2 70.6269 66.5731 70 65.8 70L51.8 69.9998L19.6 70V19.6H28V30.8C27.2269 30.8 26.6 31.4269 26.6 32.2V46.2C26.6 48.5196 28.4804 50.4 30.8 50.4H33.6C35.9196 50.4 37.8 48.5196 37.8 46.2V32.2C37.8 31.4269 37.1731 30.8 36.4 30.8V19.6H47.6V40.6H46.2C45.4268 40.6 44.8 41.2268 44.8 42V47.6C44.8 48.3731 45.4268 49 46.2 49H49V50.4H54.6V49H57.4C58.1731 49 58.8 48.3731 58.8 47.6V42C58.8 41.2268 58.1731 40.6 57.4 40.6H56V32.2H58.8C58.8 32.9732 59.4268 33.6 60.2 33.6H71.4C73.7196 33.6 75.6 31.7196 75.6 29.4V26.6C75.6 24.2804 73.7196 22.4 71.4 22.4ZM2.8 2.8H16.8V70H2.8V2.8ZM64.4 72.8V77C64.4 79.3196 62.5196 81.2 60.2 81.2H2.8V77H57.4C58.1731 77 58.8 76.3731 58.8 75.6C58.8 74.8269 58.1731 74.2 57.4 74.2H2.8V72.8H64.4ZM35 46.2C35 46.9732 34.3731 47.6 33.6 47.6H30.8C30.0268 47.6 29.4 46.9732 29.4 46.2V33.6H35V46.2ZM30.8 30.8V19.6H33.6V30.8H30.8ZM56 46.2H47.6V43.4H56V46.2ZM50.4 40.6V19.6H53.2V40.6H50.4ZM51.8003 16.7998H32.2L19.6 16.8V2.8L32.2 2.79982H51.8003L56 2.8C61.4098 2.80612 65.7939 7.19022 65.8 12.6V16.8L51.8003 16.7998ZM58.8 29.4H56V26.6H58.8V29.4ZM72.8 29.4C72.8 30.1731 72.1731 30.8 71.4 30.8H61.6V25.2H71.4C72.1731 25.2 72.8 25.8269 72.8 26.6V29.4Z"></path>
+                </svg>
+              </div><b class="whos-interested_card-title">Пищевые предприятия</b>
+              <p class="whos-interested_card-text">Повышает эффективность кормления и еще много чего</p><span class="whos-interested_card-link">Узнать больше</span></a></div>
+        </div>
+      </div>
+      <div class="fabrication" id="fabrication">
+        <div class="l-wrapper __small fabrication_wrapper"><b class="fabrication_title">Производство</b>
+          <div class="fabrication_block">
+            <div class="fabrication_img"><img src="media/img-p/fabrication-1.jpg" alt=""/></div>
+            <div class="fabrication_block-content">
+              <div class="fabrication_block-title">Собственные биореакторы</div>
+              <div class="fabrication_block-text">
+                Выращивание хлореллы Ecotonica 
+                осуществляется с использованием самой 
+                современной биотехнологии. В отличии от 
+                других производителей мы развиваем 
+                производство в специальных закрытых 
+                биореакторах, что исключает попадание 
+                вредных веществ
+              </div>
+            </div>
+          </div>
+          <div class="fabrication_block">
+            <div class="fabrication_img"><img src="media/img-p/fabrication-2.jpg" alt=""/></div>
+            <div class="fabrication_block-content">
+              <div class="fabrication_block-title">Собственная фасовка</div>
+              <div class="fabrication_block-text">
+                Позволяет фасовать товар под 
+                собственной торговой маркой или под 
+                вашим торговым знаком
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="certification">
+        <div class="l-wrapper certification_wrapper"><b class="certification_title">Сертификация</b>
+          <blockquote class="certification_quote">
+            <p class="certification_quote-text">
+              Продукция компании Econonica является 
+              сертифицированной и соответствует 
+              техническим условиям
+              
+            </p>
+            <cite class="certification_quote-author"><span>Иван Иванов</span><span>директор «Econonica»</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="media/img/sprite.svg#arrow"></use>
+                </svg>
+            </cite>
+          </blockquote><a class="certification_doc mopen" href="#cert-popup">
+            <div class="certification_doc-icon">
+                <svg class="icon icon-doc ">
+                  <use xlink:href="media/img/sprite.svg#doc"></use>
+                </svg>
+            </div><b class="certification_doc-name">Декларация о соответствии</b>
+            <time class="certification_doc-date" datetime="2017-12-27">27.12.2017</time></a>
+        </div>
+      </div>
+      <div class="green-block" id="delivery">
+        <div class="l-wrapper green-block_wrapper"><b class="green-block_title">Условия поставки</b>
+          <p class="green-block_subtitle">
+            Если вы заинтересовались поставкой хлореллы, то обязательно 
+            обратитесь к нам для детальной проработки заказа.  Для вас мы сможем 
+            предложить уникальные условия. Вот некоторые общие моменты
+            
+          </p>
+          <div class="delivery-terms">
+            <div class="delivery-terms_item"><span class="delivery-terms_num">01</span>
+              <p class="delivery-terms_text">Бесплатная пробная партия</p>
+            </div>
+            <div class="delivery-terms_item"><span class="delivery-terms_num">02</span>
+              <p class="delivery-terms_text">Бесплатная доставка от 4000 рублей</p>
+            </div>
+            <div class="delivery-terms_item"><span class="delivery-terms_num">03</span>
+              <p class="delivery-terms_text">Фасовка в таблетках и порошке в крафтовой упаковке по 100 гр.</p>
+            </div>
+            <div class="delivery-terms_item"><span class="delivery-terms_num">04</span>
+              <p class="delivery-terms_text">
+                Мелкий и крупный опт
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offers">
+        <div class="l-wrapper __extra-small offers_wrapper"><b class="offers_title">Мы предлагаем</b><b class="offers_subtitle">Хлорелла: таблетки, порошок</b>
+          <p class="offers_text">
+            Готовое бизнес решение. Вы получаете 100% экологически чистый 
+            и полезный, готовый к реализации продукт. Проверяем каждую партию 
+            продукции в аккредитованной лаборатории
+            
+          </p>
+          <div class="offers_items">
+            <div class="offer-item"><span>50–100</span><span>упаковок</span></div>
+            <div class="offer-item"><span>100–200</span><span>упаковок</span></div>
+            <div class="offer-item"><span>200–300</span><span>упаковок</span></div>
+            <div class="offer-item"><span>>300</span><span>упаковок</span></div>
+          </div><a class="btn mopen" href="#get-price">Получить прайс</a>
+        </div>
+      </div>
+      <div class="green-block __with-foo" id="contacts">
+        <div class="l-wrapper green-block_wrapper"><b class="green-block_title">Контакты</b>
+          <p class="green-block_subtitle">
+            Остались вопросы? <br>
+            Напишите — будем рады ответить
+            
+          </p>
+          <div class="contact">
+            <div class="contact_col">
+              <ul class="contact_info">
+                <li class="contact_info-item __tel">
+                  <ul class="contact_phones">
+                    <li class="contact_phones-item"><span class="contact_tel-label">Телефон</span><a class="contact_tel" href="tel:+7 (342) 243-12-14">+7 (342) 243-12-14</a></li>
+                    <li class="contact_phones-item"><span class="contact_tel-label">отдел продаж</span><a class="contact_tel" href="tel:+7 (919) 499-88-17">+7 (919) 499-88-17</a></li>
+                  </ul>
+                </li>
+                <li class="contact_info-item"><span class="contact_info-item-label">Адрес</span><span class="contact_info-item-value">г. Пермь, ул. Плеханова, д. 39</span></li>
+                <li class="contact_info-item"><span class="contact_info-item-label">e-mail</span><a class="contact_info-item-value" href="mailto:info@ecotonica.ru">info@ecotonica.ru</a></li>
+              </ul>
+            </div>
+            <div class="contact_col">
+              <form class="form" action="#" method="post" data-type="send-msg">
+                <div class="form_field-wrap">
+                  <input class="form_text-field js-validate" type="text" name="name" placeholder="Ваше имя"/>
+                </div>
+                <div class="form_field-wrap">
+                  <input class="form_text-field js-validate __email" type="email" name="email" placeholder="Ваш e-mail"/>
+                </div>
+                <div class="form_field-wrap">
+                  <textarea class="form_textarea js-validate" name="text" rows="5" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form_actions">
+                  <button class="btn __white __big" type="submit">Задать вопрос</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-foo">
+      <div class="l-wrapper site-foo_wrapper">
+        <div class="site-foo_copyright">
+          © Ecotonica, 2019
+          
+        </div>
+        <div class="site-foo_dev"><span class="site-foo_dev-label">Разработка сайта</span><a class="site-foo_dev-link" href="https://prostordesign.ru/" rel="nofollow">prostor.design</a></div>
+      </div>
+    </footer>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu_container">
+        <ul class="mobile-menu_nav">
+          <li class="mobile-menu_nav-item"><a class="mobile-menu_nav-link" href="#">Применение</a></li>
+          <li class="mobile-menu_nav-item"><a class="mobile-menu_nav-link" href="#">Условия поставки</a></li>
+          <li class="mobile-menu_nav-item"><a class="mobile-menu_nav-link" href="#">Производство</a></li>
+          <li class="mobile-menu_nav-item"><a class="mobile-menu_nav-link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="mobile-menu_info">
+          <li class="mobile-menu_info-item">
+              <svg class="icon icon-phone ">
+                <use xlink:href="media/img/sprite.svg#phone"></use>
+              </svg><a class="mobile-menu_info-link" href="#">+7 (342) 243-12-14</a>
+          </li>
+          <li class="mobile-menu_info-item">
+              <svg class="icon icon-mail ">
+                <use xlink:href="media/img/sprite.svg#mail"></use>
+              </svg><a class="mobile-menu_info-link" href="#">info@ecotonica.ru</a>
+          </li>
+        </ul>
+      </div><a class="mobile-menu_close" href="#"></a>
+    </div>
+    <div class="modal">
+      <div class="modal_container" id="interested-modal-1">
+        <div class="modal_content">
+          <div class="modal_header">
+            <h2 class="modal_title">Польза хлореллы</h2><b class="modal_subtitle">Для интернет-магазинов</b>
+          </div>
+          <div class="modal_content-width">
+            <p class="modal_text">
+              Организация и цикл развития хлореллы состоят в 
+              следующем: вегетативное тело их состоит из одной 
+              шарообразной или овальной клетки с толстой оболочкой, 
+              которая по мнению одних авторов (Brandt, Dangeard) 
+              состоит из целлюлозы, а по мнению других (Geza-Entz, 
+              Фаминцын, Аверинцев и др.) из прозрачного студенистого 
+              вещества, лишенного целлюлозы. Такое разногласие во 
+              мнениях произошло в силу того, что иногда оболочка 
+              хлореллы не дает типичного для целлюлозы фиолетового 
+              окрашивания от хлорцинкиода, а потому вопрос этот 
+              остается пока открытым. Размеры шарообразных 
+              вегетативных клеток колеблются по данным различных 
+              авторов от 1,5 мкм до 12 мкм. В каждой такой клетке 
+              находится гомогенная протоплазма, очень маленькое.
+              
+            </p>
+          </div>
+          <div class="modal_actions"><a class="btn mopen" href="#get-price">Получить прайс</a></div>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <div class="modal">
+      <div class="modal_container" id="interested-modal-2">
+        <div class="modal_content">
+          <div class="modal_header">
+            <h2 class="modal_title">Польза хлореллы</h2><b class="modal_subtitle">Для интернет-магазинов</b>
+          </div>
+          <div class="modal_content-width">
+            <p class="modal_text">
+              Организация и цикл развития хлореллы состоят в 
+              следующем: вегетативное тело их состоит из одной 
+              шарообразной или овальной клетки с толстой оболочкой, 
+              которая по мнению одних авторов (Brandt, Dangeard) 
+              состоит из целлюлозы, а по мнению других (Geza-Entz, 
+              Фаминцын, Аверинцев и др.) из прозрачного студенистого 
+              вещества, лишенного целлюлозы. Такое разногласие во 
+              мнениях произошло в силу того, что иногда оболочка 
+              хлореллы не дает типичного для целлюлозы фиолетового 
+              окрашивания от хлорцинкиода, а потому вопрос этот 
+              остается пока открытым. Размеры шарообразных 
+              вегетативных клеток колеблются по данным различных 
+              авторов от 1,5 мкм до 12 мкм. В каждой такой клетке 
+              находится гомогенная протоплазма, очень маленькое.
+              
+            </p>
+          </div>
+          <div class="modal_actions"><a class="btn mopen" href="#get-price">Получить прайс</a></div>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <div class="modal">
+      <div class="modal_container" id="interested-modal-3">
+        <div class="modal_content">
+          <div class="modal_header">
+            <h2 class="modal_title">Польза хлореллы</h2><b class="modal_subtitle">Для интернет-магазинов</b>
+          </div>
+          <div class="modal_content-width">
+            <p class="modal_text">
+              Организация и цикл развития хлореллы состоят в 
+              следующем: вегетативное тело их состоит из одной 
+              шарообразной или овальной клетки с толстой оболочкой, 
+              которая по мнению одних авторов (Brandt, Dangeard) 
+              состоит из целлюлозы, а по мнению других (Geza-Entz, 
+              Фаминцын, Аверинцев и др.) из прозрачного студенистого 
+              вещества, лишенного целлюлозы. Такое разногласие во 
+              мнениях произошло в силу того, что иногда оболочка 
+              хлореллы не дает типичного для целлюлозы фиолетового 
+              окрашивания от хлорцинкиода, а потому вопрос этот 
+              остается пока открытым. Размеры шарообразных 
+              вегетативных клеток колеблются по данным различных 
+              авторов от 1,5 мкм до 12 мкм. В каждой такой клетке 
+              находится гомогенная протоплазма, очень маленькое.
+              
+            </p>
+          </div>
+          <div class="modal_actions"><a class="btn mopen" href="#get-price">Получить прайс</a></div>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <div class="modal">
+      <div class="modal_container" id="interested-modal-4">
+        <div class="modal_content">
+          <div class="modal_header">
+            <h2 class="modal_title">Польза хлореллы</h2><b class="modal_subtitle">Для интернет-магазинов</b>
+          </div>
+          <div class="modal_content-width">
+            <p class="modal_text">
+              Организация и цикл развития хлореллы состоят в 
+              следующем: вегетативное тело их состоит из одной 
+              шарообразной или овальной клетки с толстой оболочкой, 
+              которая по мнению одних авторов (Brandt, Dangeard) 
+              состоит из целлюлозы, а по мнению других (Geza-Entz, 
+              Фаминцын, Аверинцев и др.) из прозрачного студенистого 
+              вещества, лишенного целлюлозы. Такое разногласие во 
+              мнениях произошло в силу того, что иногда оболочка 
+              хлореллы не дает типичного для целлюлозы фиолетового 
+              окрашивания от хлорцинкиода, а потому вопрос этот 
+              остается пока открытым. Размеры шарообразных 
+              вегетативных клеток колеблются по данным различных 
+              авторов от 1,5 мкм до 12 мкм. В каждой такой клетке 
+              находится гомогенная протоплазма, очень маленькое.
+              
+            </p>
+          </div>
+          <div class="modal_actions"><a class="btn mopen" href="#get-price">Получить прайс</a></div>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <div class="modal">
+      <div class="modal_container" id="get-price">
+        <div class="modal_content">
+          <div class="modal_header">
+            <h2 class="modal_title">Получить прайс</h2>
+          </div>
+          <div class="modal_content-width">
+            <form class="form __green" action="#" method="post" data-type="get-price">
+              <div class="form_field-wrap">
+                <input class="form_text-field js-validate" type="text" name="name" placeholder="Ваше имя"/>
+              </div>
+              <div class="form_field-wrap">
+                <input class="form_text-field js-validate __tel-or-email" type="text" name="email" placeholder="Ваш e-mail или номер телефона"/>
+              </div>
+              <div class="form_actions">
+                <button class="btn" type="submit">Получить прайс</button>
+              </div>
+            </form>
+          </div>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <div class="modal">
+      <div class="modal_container" id="done-msg">
+        <div class="modal_content">
+          <div class="modal_header">
+            <h2 class="modal_title">Получить прайс</h2>
+          </div>
+          <div class="modal_content-width">
+            <p class="modal_text">
+              Спасибо за обращение!<br>
+              Скоро с вами свяжется наш менеджер
+              
+            </p>
+          </div>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <div class="modal">
+      <div class="modal_container __only-img" id="cert-popup">
+        <div class="modal_content"><img src="media/img/cert-big.png" alt="Сертификат"/></div><a class="modal_close" href="#"></a>
+      </div>
+    </div>
+    <script src="js/libs/jquery.wui.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

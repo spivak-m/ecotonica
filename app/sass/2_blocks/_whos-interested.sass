@@ -1,0 +1,109 @@
+.whos-interested
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: stretch
+
+.whos-interested_card
+	width: calc(100% / 4 - 30px / 4)
+	margin-right: 10px
+	border: 1px solid #fff
+	padding: 50px 20px 30px
+	text-align: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	font-size: .937rem
+	transition: .2s
+	text-decoration: none
+	color: inherit
+
+	&:last-child
+		margin-right: 0
+
+	&:hover
+		background-color: #fff
+		color: #2F8048
+		cursor: pointer
+
+		.whos-interested_card-icon svg
+			fill: #2F8048
+
+		.whos-interested_card-link::before
+			background-color: rgba(47,128,72, .4)
+
+.whos-interested_card-icon
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 84px
+	margin-bottom: 50px
+
+.whos-interested_card-title
+	display: block
+	font-size: 1.25rem
+	line-height: 1
+	margin-bottom: 8px
+	font-family: "Cormorant Unicase", serif
+
+.whos-interested_card-text
+	margin: 0 0 20px
+	line-height: 1.3
+	opacity: .8
+
+.whos-interested_card-link
+	color: inherit
+	text-decoration: none
+	line-height: 1
+	position: relative
+	padding-bottom: 1px
+	margin-top: auto
+
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 1px
+		background-color: rgba(255,255,255, .4)
+
+@media screen and (max-width: 1024px)
+	.whos-interested
+		flex-wrap: wrap
+
+	.whos-interested_card
+		width: calc(100% / 2 - 5px)
+		margin-right: 10px
+		padding: 20px
+
+		&:nth-child(2n+2)
+			margin-right: 0
+
+		&:nth-child(n+3)
+			margin-top: 10px
+
+	.whos-interested_card-icon
+		width: 50px
+		height: 50px
+		margin-bottom: 20px
+
+	.whos-interested_card-title
+		font-size: 1rem
+
+	.whos-interested_card-text
+		font-size: .75rem
+
+	.whos-interested_card-link
+		font-size: .75rem

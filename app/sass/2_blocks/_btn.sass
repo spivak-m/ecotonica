@@ -1,0 +1,45 @@
+.btn
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	justify-content: center
+	align-items: center
+
+	background-color: #42884a
+	color: #fff
+	text-decoration: none
+	border: none
+	line-height: 1
+	min-height: 60px
+	padding: 15px 40px
+	transition: .2s
+	border: 1px solid #42884A
+	cursor: pointer
+	outline: none
+
+	&:hover
+		background-color: #fff
+		color: #42884A
+	
+	&.__white
+		background-color: #fff
+		color: #42884A
+
+		&:hover
+			background-color: #42884A
+			border-color: #fff
+			color: #fff
+
+	&.__big
+		padding-left: 80px
+		padding-right: 80px
+
+@media screen and (max-width: 1024px)
+	.btn
+		font-size: .75rem
+		min-height: 40px
+
+		&.__big
+			min-height: 40px

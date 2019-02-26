@@ -1,0 +1,54 @@
+.site-foo
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	color: rgba(255,255,255, .7)
+	font-size: .75rem
+	line-height: 1
+
+.site-foo_wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding-top: 30px
+	padding-bottom: 30px
+	position: relative
+
+	&::before
+		content: ""
+		border-top: 1px solid rgba(255, 255, 255, 0.3)
+		position: absolute
+		top: 0
+		left: 10px
+		right: 10px
+
+.site-foo_dev
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.site-foo_dev-link
+	margin-left: 5px
+	color: inherit
+	text-decoration: none
+	transition: .2s
+
+	&:hover
+		color: #fff
+
+@media screen and (max-width: 1024px)
+	.site-foo_wrapper
+		flex-direction: column
+		padding-top: 20px
+		padding-bottom: 20px
+
+	.site-foo_dev
+		margin-top: 10px

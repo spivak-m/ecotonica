@@ -1,0 +1,178 @@
+.certification
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+	position: relative
+
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		background: linear-gradient(90deg, #FFFFFF 10%, rgba(255, 255, 255, 0) 57%) no-repeat 0 0, url(../media/img/doc.jpg) no-repeat 100% 50%
+		z-index: -1
+		width: 100%
+		max-width: 746px
+
+.certification_wrapper
+	min-height: 543px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	justify-content: center
+
+.certification_title
+	font-size: 3.125rem
+	line-height: 1
+	color: #333
+	display: block
+	margin-bottom: 50px
+	font-family: "Cormorant Unicase", serif
+
+.certification_quote
+	display: block
+	width: 370px
+	color: #6f6f6f
+	margin: 0 0 80px
+	padding: 0
+
+.certification_quote-text
+	margin: 0 0 30px
+
+.certification_quote-author
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	padding-left: 65px
+	font-style: normal
+	color: #6f6f6f
+	font-size: .875rem
+	line-height: 1
+	position: relative
+
+	span:nth-child(1)
+		margin-bottom: 8px
+
+	span:nth-child(2)
+		font-size: .75rem
+		opacity: .6
+
+	
+	&::before
+		content: ""
+		display: block
+		width: 45px
+		height: 1px
+		background-color: #2F8048
+		position: absolute
+		left: 0
+		top: 10px
+
+	.icon
+		position: absolute
+		top: 50%
+		right: 0
+		width: 40px
+		height: 42px
+		margin-top: -21px
+
+.certification_doc
+	width: 390px
+	background-color: rgba(242,242,242, .6)
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	padding: 25px 20px 25px 70px
+	position: relative
+	text-decoration: none
+	color: inherit
+	border: 1px solid transparent
+	color: #333
+	transition: .2s
+	
+	&:hover
+		background-color: #fff
+		border-color: #f2f2f2
+		color: #42884A
+
+.certification_doc-icon
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 30px
+	height: 42px
+	position: absolute
+	top: 50%
+	margin-top: -21px
+	left: 20px
+	color: #2F8048
+
+.certification_doc-name
+	font-size: 1.125rem
+	line-height: 1
+	display: block
+	margin-bottom: 5px
+	font-family: "Cormorant Unicase", serif
+
+.certification_doc-date
+	font-size: .75rem
+	line-height: 1
+	color: #6f6f6f
+	display: block
+	margin-bottom: 0
+
+@media screen and (max-width: 1024px)
+	.certification
+		font-size: .875rem
+
+		&::before
+			height: 220px
+			max-width: 500px
+			top: initial
+			right: 50%
+			transform: translate(50%)
+			margin-right: auto
+			margin-left: auto
+			background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0) 75%), url(../media/img/doc.jpg) no-repeat 50% 0
+			background-size: contain, 100% auto
+
+	.certification_wrapper
+		min-height: initial
+		padding-top: 50px
+		padding-bottom: 250px
+		max-width: 520px
+		margin-right: auto
+		margin-left: auto
+
+	.certification_title
+		font-size: 1.812rem
+		margin: 0 auto 30px
+	
+	.certification_quote
+		width: auto
+		margin-bottom: 40px
+
+	.certification_quote-text
+		margin-bottom: 20px
+
+	.certification_doc
+		width: 100%
+		max-width: 400px
+
+	.certification_doc-name
+		font-size: 1rem

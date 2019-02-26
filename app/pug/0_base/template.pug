@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		block title
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" type="image/png" href="favicon.png")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/styles.css")
+		
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+
+	block vars
+
+	//- MIXINS
+	include ../3_helpers/ic
+	
+	body
+		include ../1_blocks/site-header
+
+		main
+			block content
+
+		include ../1_blocks/site-foo
+
+		include ../1_blocks/modals/mobile-menu
+		include ../1_blocks/modals/interested-modal-1
+		include ../1_blocks/modals/interested-modal-2
+		include ../1_blocks/modals/interested-modal-3
+		include ../1_blocks/modals/interested-modal-4
+		include ../1_blocks/modals/get-price
+		include ../1_blocks/modals/done-msg
+		include ../1_blocks/modals/cert
+		
+		script(src="js/libs/jquery.wui.js")
+		script(src="js/script.js")

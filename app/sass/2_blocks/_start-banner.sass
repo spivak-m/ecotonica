@@ -1,0 +1,81 @@
+.start-banner
+	position: relative
+
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		width: 920px
+		background: linear-gradient(90deg, #FFFFFF 30%, rgba(255, 255, 255, 0) 86.3%) no-repeat 0 0, url(../media/img/start-banner-bg.jpg) no-repeat 100% 50%
+
+.start-banner_wrapper
+	min-height: 720px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	position: relative
+	z-index: 2
+
+.start-banner_title
+	font-size: 3.125rem
+	line-height: 1.2
+	color: #333333
+	margin: 0 0 35px
+	padding-bottom: 30px
+	position: relative
+	font-family: "Cormorant Unicase", serif
+
+	&::before
+		content: ""
+		display: block
+		width: 140px
+		height: 1px
+		background-color: #2F8048
+		position: absolute
+		bottom: 0
+		left: 0
+
+.start-banner_text
+	margin: 0 0 60px
+	color: #6f6f6f
+	line-height: 1.2
+
+@media screen and (max-width: 1024px)
+	.start-banner
+		&::before
+			width: 100%
+			top: initial
+			height: 220px
+			background: linear-gradient(180deg, #FFFFFF 10%, rgba(255, 255, 255, 0) 86.3%) no-repeat 0 0, url(../media/img/start-banner-bg.jpg) no-repeat 50% 25%
+			background-size: contain, 100% auto
+
+	.start-banner_wrapper
+		min-height: 520px
+		padding-top: 50px
+		justify-content: flex-start
+		align-items: center
+		text-align: center
+
+	.start-banner_title
+		font-size: 1.812rem
+		margin-right: auto
+		margin-left: auto
+		padding-bottom: 15px
+		margin-bottom: 15px
+
+		&::before
+			left: 50%
+			margin-left: -70px
+
+	.start-banner_text
+		font-size: .875rem
+		line-height: 1.5
+		margin-bottom: 30px

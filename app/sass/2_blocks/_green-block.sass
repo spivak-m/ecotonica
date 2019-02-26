@@ -1,0 +1,74 @@
+.green-block
+	background-color: #2F8048
+	color: #fff
+	position: relative
+
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background: url(../media/img/green-bg.svg) repeat 50% 0
+		opacity: .05
+
+	&.__with-foo
+		padding-bottom: 60px
+
+.green-block_wrapper
+	padding-top: 70px
+	padding-bottom: 80px
+	position: relative
+	z-index: 1
+
+.green-block_title
+	display: block
+	text-align: center
+	font-size: 3.125rem
+	line-height: 1
+	color: inherit
+	margin-bottom: 70px
+	font-family: "Cormorant Unicase", serif
+
+.green-block_subtitle
+	text-align: center
+	max-width: 595px
+	margin: 0 auto 60px
+	position: relative
+	color: #F2F2F2
+	line-height: 1.5
+
+	&::before
+		content: ""
+		display: block
+		width: 140px
+		height: 1px
+		background-color: #fff
+		position: absolute
+		top: 0
+		left: 50%
+		margin-top: -30px
+		margin-left: -70px
+
+@media screen and (max-width: 1024px)
+	.green-block.__with-foo
+		padding-bottom: 55px
+
+	.green-block_wrapper
+		padding-top: 50px
+		padding-bottom: 60px
+
+	.green-block_title
+		font-size: 1.812rem
+		margin-bottom: 20px
+
+	.green-block_subtitle
+		padding-top: 10px
+		font-size: .875rem
+		margin-bottom: 30px
+
+		&::before
+			top: 0
+			margin-top: -5px

@@ -1,0 +1,24 @@
+header.site-header
+	.l-wrapper.site-header_wrapper
+		a(href="#").site-header_logo
+			img(src="media/img/site-logo.png", alt="site-logo")
+
+		.site-header_nav
+			nav.site-nav
+				ul.site-nav_list
+					li.site-nav_item: a(href="#use").site-nav_link Применение
+					li.site-nav_item: a(href="#fabrication").site-nav_link Производство
+					li.site-nav_item: a(href="#delivery").site-nav_link Условия поставки
+					li.site-nav_item: a(href="#contacts").site-nav_link Контакты
+
+		.site-header_info
+			.site-header_info-item
+				+icon("mail")
+				a(href="mailto:info@ecotonica.ru").site-header_info-link info@ecotonica.ru
+			.site-header_info-item
+				+icon("phone")
+				a(href="tel:+7 (342) 243-12-14").site-header_info-link +7 (342) 243-12-14
+		
+		.site-header_menu
+			a(href="#").site-header_menu-open.js-m-menu-open: +icon("bars")
+
